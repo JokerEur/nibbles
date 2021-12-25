@@ -1,0 +1,5 @@
+/home/ivan/Documents/workspace/Nibbles/build/CMakeFiles/nibbles.dir
+/home/ivan/Documents/workspace/Nibbles/build/CMakeFiles/package.dir
+/home/ivan/Documents/workspace/Nibbles/build/CMakeFiles/package_source.dir
+/home/ivan/Documents/workspace/Nibbles/build/CMakeFiles/edit_cache.dir
+/home/ivan/Documents/workspace/Nibbles/build/CMakeFiles/rebuild_cache.dir

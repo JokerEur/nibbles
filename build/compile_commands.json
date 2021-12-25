@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/main.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/main.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/main.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/engine.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/engine.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/engine.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/draw.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/draw.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/draw.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/input.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/input.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/input.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/snakesection.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/snakesection.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/snakesection.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/update.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/update.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/update.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/apple.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/apple.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/apple.cpp"
+},
+{
+  "directory": "/home/ivan/Documents/workspace/Nibbles/build",
+  "command": "/usr/bin/c++  -I/home/ivan/Documents/workspace/Nibbles/headers -I/home/ivan/Documents/workspace/Nibbles/c:/SFML/include -g -std=gnu++20 -o CMakeFiles/nibbles.dir/src/wall.cpp.o -c /home/ivan/Documents/workspace/Nibbles/src/wall.cpp",
+  "file": "/home/ivan/Documents/workspace/Nibbles/src/wall.cpp"
+}
+]
