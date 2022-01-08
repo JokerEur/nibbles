@@ -85,6 +85,7 @@ void Engine::StartGame()
   sectionToAdd = 0;
   directionQueue.clear();
   wallSections.clear();
+  holeSections.clear();
   applesEatenOnThisLevel = 0;
   applesEatenTotal = 0;
 
@@ -116,12 +117,28 @@ void Engine::loadLevel(int levelsNumber)
       getline(level, line);
       for (int x = 0; x < 40; ++x)
       {
-        if (line[x] == 'x')
-        {
+        if (line[x] == 'x'){
           wallSections.emplace_back(Wall(sf::Vector2f(x * 20, y * 20), sf::Vector2f(20, 20)));
         }
+
+        if (line[x] == 'H'){
+         for(int x2 = x+1 ; x2 < 40; ++x2){
+           if(line[x2] =='H'){
+           holeSections.emplace_back(std::make_pair(Hole(sf::Vector2f(x*20,y*20),sf::Vector2f(20,20)), Hole(sf::Vector2f(x2*20,y*20),sf::Vector2f(20,20)) ));
+           }
+           
+         }
+        }
+
       }
     }
+
+
+    
+
+
+
+
   }
   level.close();
 }
@@ -149,9 +166,9 @@ void Engine::beginNextLevel(){
 void Engine::newSnake()
 {
   snake.clear();
-  snake.emplace_back(sf::Vector2f(100, 100));
-  snake.emplace_back(sf::Vector2f(80, 100));
-  snake.emplace_back(sf::Vector2f(60, 100));
+  snake.emplace_back(sf::Vector2f(180, 100));
+  snake.emplace_back(sf::Vector2f(160, 100));
+  snake.emplace_back(sf::Vector2f(140, 100));
 }
 
 void Engine::addSnakeSection()
@@ -216,6 +233,8 @@ void Engine::run()
   while (window.isOpen())
   {
     sf::Time DT = clock.restart();
+
+    
 
     if (currentGameState == GameState::PAUSED || currentGameState == GameState::GAMEOVER)
     {

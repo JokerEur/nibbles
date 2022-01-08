@@ -72,7 +72,6 @@ void Engine::update()
             lastSectionPosition = thisSectionPosition;
         }
         
-
         for(auto & s : snake){
             s.update();
         }
@@ -87,7 +86,7 @@ void Engine::update()
 
             bool beginNewLevel = false;
 
-            if(applesEatenOnThisLevel >= 5){
+            if(applesEatenOnThisLevel >= 1){
                 if (currentLevel < maxLevels){
                     beginNewLevel = true;
                     beginNextLevel();
@@ -115,8 +114,19 @@ void Engine::update()
                 currentGameState = GameState::GAMEOVER;
             }
         }
+        for(auto &h : holeSections){
 
+            if(snake[0].getShape().getGlobalBounds().intersects(h.first.getShape().getGlobalBounds())){
+                for (int s = 0; s < snake.size();s++)
+                    snake[s].setPosition(sf::Vector2f(h.second.getShape().getPosition().x, h.second.getShape().getPosition().y));
+            }
 
+            if(snake[0].getShape().getGlobalBounds().intersects(h.second.getShape().getGlobalBounds())){
+                for(int s = 0 ; s < snake.size();s++)
+                    snake[s].setPosition(sf::Vector2f(h.first.getShape().getPosition().x, h.first.getShape().getPosition().y));
+            }
+            
+        }
 
 
 

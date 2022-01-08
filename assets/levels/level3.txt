@@ -6,17 +6,17 @@ x                                      x
 x                                      x
 x                                      x
 x                                      x
-x                                      x
-x                                      x 
-x                                      x
-x                                      x 
-x                                      x
-x                                      x 
-x                                      x 
-x                                      x 
-x                                      x 
-x                                      x 
-x                                      x                                       
+xxxxxxxxxxxxxxxx                       x
+x                   x     xxxxxxxxxxxxxx
+H                   x                  H
+H                   x                  H
+H                   x                  H
+H                   x                  H
+H                   x                  H
+H                   x                  H
+H                   x                  H
+xxxxxxxxxxxxxxxx    x                  x
+x                         xxxxxxxxxxxxxx
 x                                      x
 x                                      x
 x                                      x

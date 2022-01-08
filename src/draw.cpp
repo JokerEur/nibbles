@@ -9,11 +9,17 @@ void Engine::draw() {
   }
 
 
+
   window.draw(apple.getSprite()); 
 
   // Draw snake sections
   for (auto & s : snake) {
     window.draw(s.getShape());
+  }
+  
+  for(auto &h :holeSections){
+    window.draw(h.first.getShape());
+    window.draw(h.second.getShape());
   }
 
   window.draw(titleText);

@@ -3,21 +3,21 @@
 
 #include <SFML/Graphics.hpp>
 
-
-class SnakeSection {
+class SnakeSection
+{
 private:
     sf::Vector2f position;
-   sf::RectangleShape section;
+    sf::RectangleShape section;
+
 public:
     explicit SnakeSection(sf::Vector2f startPosition);
 
-   sf::Vector2f getPosition();
+    sf::Vector2f getPosition();
     void setPosition(sf::Vector2f newPosition);
 
-   sf::RectangleShape getShape();
+    sf::RectangleShape getShape();
 
     void update();
 };
 
-
-#endif 
+#endif
