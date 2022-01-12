@@ -60,6 +60,10 @@ private:
 public:
     Engine();
 
+    /**
+     * @brief Перечесление для направления змейхи 
+     * 
+     */
     enum Direction
     {
         UP,
@@ -67,6 +71,11 @@ public:
         DOWN,
         LEFT
     };
+
+    /**
+     * @brief Перечесление для состояния игры 
+     * 
+     */
     enum GameState
     {
         RUNNING,
@@ -74,26 +83,95 @@ public:
         GAMEOVER
     };
 
+    
+    /**
+     * @brief Позволяет взаимодействовать со змейкой
+     * 
+     * 
+     */
     void input();
+
+    /**
+     * @brief Позваляет добавлять новое направление в очеред направления
+     * 
+     * @param newDirection Новое направление змейки
+     */
     void addDirection(int newDirection);
+
     void update();
 
+    /**
+     * @brief Позволяет отрисовать объекты на экране 
+     * 
+     */
     void draw();
 
+    /**
+     * @brief Создаёт новую змейку на экране
+     * 
+     */
     void newSnake();
-    void addSnakeSection();
 
+    /**
+     * @brief Добавляет новую секию к змейке
+     * 
+     */
+    void addSnakeSection();
+    
+    /**
+     * @brief Размещает яблоко на карте
+     * 
+     */
     void moveApple();
 
+    /**
+     * @brief Начинает новый уровень
+     * 
+     */
     void beginNextLevel();
+
+    /**
+     * @brief Устанавливает паузу
+     * 
+     * 
+     * 
+     */
     void Pause();
+
+    /**
+     * @brief 
+     * 
+     */
     void StartGame();
+
+    /**
+     * @brief Позволяет редактировать текст, который будет выведен на экран
+     * 
+     * @param txtItem Объект класса sf::Text
+     * @param font Шрифт
+     * @param value Значение строки
+     * @param size Размер отображаемого текста
+     * @param color Цвет
+     */
     static void manageText(sf::Text *txtItem, const sf::Font &font, const std::string &value, int size, sf::Color color);
 
+    /**
+    * @brief Проверяет файл levels.txt на наличие уровней
+    *
+    */
     void checkLevelFiles();
+
+    /**
+     * @brief Загружает уровень
+     * 
+     * @param levelsNumber Индекс уровня
+     */
     void loadLevel(int levelsNumber);
 
-    // The main loop will be in the run function
+    /**
+     * @brief Основной цикл игры
+     * 
+     */
     void run();
 };
 

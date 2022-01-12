@@ -21,7 +21,7 @@ void Engine::update()
             case Direction::DOWN:
                 if (directionQueue.front() != Direction::UP)
                 {
-                    snakeDirection = directionQueue.front();
+                        snakeDirection = directionQueue.front();
                 }
                 break;
             case Direction::RIGHT:
@@ -86,7 +86,7 @@ void Engine::update()
 
             bool beginNewLevel = false;
 
-            if(applesEatenOnThisLevel >= 7){
+            if(applesEatenOnThisLevel >= 1){
                 if (currentLevel < maxLevels){
                     beginNewLevel = true;
                     beginNextLevel();
