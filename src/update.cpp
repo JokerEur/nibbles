@@ -86,7 +86,7 @@ void Engine::update()
 
             bool beginNewLevel = false;
 
-            if(applesEatenOnThisLevel >= 1){
+            if(applesEatenOnThisLevel >= 7){
                 if (currentLevel < maxLevels){
                     beginNewLevel = true;
                     beginNextLevel();
